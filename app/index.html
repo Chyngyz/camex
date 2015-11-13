@@ -5,12 +5,16 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>camex</title>
-
+    
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
+    <link rel="stylesheet" type="text/css" href="../bower_components/owl-carousel/owl-carousel/owl.carousel.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/owl-carousel/owl-carousel/owl.theme.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/owl-carousel/owl-carousel/owl.transitions.css">
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -23,53 +27,272 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
 
-    <!-- Begin page content -->
-    <div class="container">
-      <div class="page-header">
-        <h1>Sticky footer with fixed navbar</h1>
+    <!-- Begin of header -->
+    <header class="ca-header">
+      <!-- Begin of top-header -->
+      <div class="ca-top-header">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6">
+              <p class="ca-support">Служба поддержки: <a href="tel:77272486803">+7 (727) 248 68 03</a></p>
+            </div>
+            <div class="col-md-6 col-sm-6">
+              <nav class="ca-top-header--nav">
+                <ul class="list-inline">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-lock"></i>
+                      Вход в систему
+                    </a>
+                  </li>
+                  <li>|</li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-user"></i>
+                      Регистрация
+                    </a>
+                    
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
       </div>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p>
-      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
-    </div>
+      <!-- End of top-header -->
+
+      <!-- Begin of ca-header-main -->
+      <div class="ca-header--main">
+        <!-- Begin of navbar -->
+        <nav class="navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Camex Logo"></a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse in navbar-right">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="#">Cервисы</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Необходимо знать <i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Бесплатная доставка покупки в пределах страны-продавца</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">GoShopping</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" role="button" aria-haspopup="true" aria-expanded="false">Цены <i class="fa fa-angle-down"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Контакт</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+      </div>
+      <!-- End of ca-header-main -->
+    </header>
+    <!-- End of header -->    
+    
+    <!-- Begin Slider -->
+    <section>
+      <!-- Begin of ca-slider -->
+      <div class="ca-slider">
+        <div id="hero-slider" class="owl-carousel owl-theme hidden-xs">
+ 
+            <div class="item" style="background-image: url('images/slide1.jpg');">
+              <div class="item-content">
+                <h1>Покупка и доставка товаров из США, Дубай и Китая</h1>
+                <p>Мы можем подготовить для путешествия всё — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
+                <a href="#" class="btn btn-outline-green">И еще более 200 магазинов <i class="fa fa-angle-right"></i></a>
+              </div>
+            </div>
+            <div class="item" style="background-image: url('images/slide1.jpg');">
+              <div class="item-content">
+                <h1>Мы можем подготовить для путешествия всё</h1>
+                <p>25 лет искренней заботы о путешественниках — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
+              </div>
+            </div>
+            <div class="item" style="background-image: url('images/slide1.jpg');">
+              <div class="item-content">
+                <h1>25 лет искренней заботы о путешественниках</h1>
+                <p>Мы можем подготовить для путешествия всё — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
+              </div>
+            </div>
+            <div class="item" style="background-image: url('images/slide1.jpg');">
+              <div class="item-content">
+                <h1>Мы можем подготовить для путешествия всё</h1>
+                <p>25 лет искренней заботы о путешественниках — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
+              </div>
+            </div>
+           
+          </div>
+      </div>
+      <!-- End of ca-slider -->
+    </section>
+    <!-- End slider -->
+    
+    
+    <!-- Begin how it works -->
+    <section class="ca-howitworks">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <h2>Как это работает</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-3 col-sm-6 col-xs-12 ca-how-item">
+            <img src="images/icon1.svg" alt="">
+            <p class="title"><a href="#">Регистрация</a> на Camex.KZ</p>
+            <p>У вас появится собственный адрес доставки в США, Дубай или Китае</p>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 ca-how-item">
+            <img src="images/icon2.svg" alt="">
+            <p class="title">Делаете покупки в интернет-магазинах</p>
+            <p>Указывая при этом полученный адрес доставки</p>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 ca-how-item">
+            <img src="images/icon3.svg" alt="">
+            <p class="title">Ваши покупки отправляются на склады и готовятся к отправке </p>
+            <p>Мы аккуратно относимся к вещам наших клиентов и все товары тщательно проверяем</p>
+          </div>
+          <div class="col-md-3 col-sm-6 col-xs-12 ca-how-item">
+            <img src="images/icon4.svg" alt="">
+            <p class="title">Вы получаете ваш заказ у нас в офисе</p>
+            <p>Вплоть до этого момента, вы всегда сможете отследить статус вашего заказа. Удачных покупок! </p>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="#" class="btn btn-outline">УЗНАТЬ ПОДРОБНОСТИ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of how it works -->
+
+
+    <!-- Begin of features -->
+    <section class="ca-features">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Преимущества</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 col-sm-6">
+            <p><img src="images/tick.svg">Бесплатный tax free адрес</p>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <p><img src="images/tick.svg">Удобное отслеживание вашего заказа</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-md-offset-2 col-sm-6">
+            <p><img src="images/tick.svg">Низкие цены на наши услуги</p>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <p><img src="images/tick.svg">Кратчайшие сроки</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12 text-center">
+            <a href="#" class="btn btn-outline-green">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of features -->
+
+    <!-- Begin of popular-shops -->
+    <section class="popular-shops">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2>Популярные магазины</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="ca-brand">
+              <a href="#">
+                <img src="images/brand1.jpg">
+                <span class="ca-brand-web">apple.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="ca-brand">
+              <a href="#">
+                <img src="images/brand2.jpg">
+                <span class="ca-brand-web">samsung.uae</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="ca-brand">
+              <a href="#">
+                <img src="images/brand3.jpg">
+                <span class="ca-brand-web">victoriassecret.com</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-12">
+            <a href="#" class="btn btn-outline">СМОТРЕТЬ ВСЕ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of popular-shops -->
+
+    <!-- Begin of ca-map -->
+    <section class="ca-map">
+      <div id="ca-map"></div>
+      <div class="container">
+        <div class="ca-contacts-block">
+          <img src="images/logo-white.svg">
+          <p>Республика Казахстан, <br> г. Алматы ул. Егизбаева 52</p>
+          <p>Tel.: +7 (727) 248 68 03 <br>Сот.: +7 707 300 05 30</p>
+        </div>
+      </div>
+    </section>
+    <!-- End of ca-map -->
 
     <footer class="footer">
       <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
+        <p class="text-muted text-center">2014 &copy; Camex.net. ALL Rights Reserved. <a href="#">Пользовательское соглашение</a></p>
+        
       </div>
     </footer>
     
@@ -86,6 +309,7 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <script src="/bower_components/owl-carousel/owl-carousel/owl.carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
