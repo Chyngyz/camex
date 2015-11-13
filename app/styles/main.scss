@@ -222,6 +222,7 @@ code {
   width: 310px;
   height: 75px;
   padding: 24px 0;
+  margin-left: 0 !important;
 
   @include MQM(MD) {
     height: 50px;
@@ -262,7 +263,7 @@ code {
 
     &:hover {
       color: #0061a9;
-      
+
       @include MQ(MD) {
         border-top-color: #0061A9;
       }
