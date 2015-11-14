@@ -308,8 +308,8 @@ var pins = [
                 {
                     pin : '',
                     desc : '',
-                    lat : 42.85717,
-                    long : 74.609259
+                    lat : 43.2315547,
+                    long : 76.8861131
                 }
             ];
 
@@ -319,7 +319,7 @@ var pins = [
 
             var mapOptions = {
                 zoom: 16,
-                center: new google.maps.LatLng(42.85717, 74.609259),
+                center: new google.maps.LatLng(43.2315547, 76.8861131),
                 
                 styles: [
                             {stylers:[
