@@ -1,7 +1,6 @@
-//Animate CSS + WayPoints javaScript Plugin
-//Example: $(".element").animated("zoomInUp");
-//Author URL: http://webdesign-master.ru
-(function($) {
+
+
+;(function($){
 	$.fn.animated = function(inEffect) {
 		$(this).each(function() {
 			var ths = $(this);
@@ -15,9 +14,7 @@
 
 		});
 	};
-})(jQuery);
 
-(function($){
 	$(document).ready(function() {
 
 		
@@ -46,6 +43,16 @@
 		    // itemsMobile : false
 	 
 	  	});
+
+
+	  	// Masked input in forms
+	  	$("#mask_date2").mask("##/##/####", {placeholder:"mm/dd/yyyy"});
+
+	  	// Animations
+	  	$('.ca-howitworks h2, .ca-features h2, .popular-shops h2, .ca-how-item, .ca-features p').animated('fadeInUp');
+	  	$('.ca-howitworks .btn-outline, .ca-features .btn-outline-green, .popular-shops .btn-outline').animated('zoomIn');
+	  	$('.ca-brand').animated('flipInY');
+
 
 
 		// Go top!
