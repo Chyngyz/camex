@@ -12,15 +12,13 @@
 
     <!-- build:css styles/vendor.css -->
     <!-- bower:css -->
-    <link rel="stylesheet" type="text/css" href="../bower_components/owl-carousel/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" type="text/css" href="../bower_components/owl-carousel/owl-carousel/owl.theme.css">
-    <link rel="stylesheet" type="text/css" href="../bower_components/owl-carousel/owl-carousel/owl.transitions.css">
     <!-- endbower -->
     <!-- endbuild -->
 
     <!-- build:css styles/main.css -->
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
     
   </head>
   <body>
@@ -121,26 +119,26 @@
       <div class="ca-slider">
         <div id="hero-slider" class="owl-carousel owl-theme hidden-xs">
  
-            <div class="item" style="background-image: url('images/slide1.jpg');">
+            <div class="item" style="background-image: url('images/slide1.png');">
               <div class="item-content">
                 <h1>Покупка и доставка товаров из США, Дубай и Китая</h1>
-                <p>Мы можем подготовить для путешествия всё — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
+                <img src="images/brands.svg">
                 <a href="#" class="btn btn-outline-green">И еще более 200 магазинов <i class="fa fa-angle-right"></i></a>
               </div>
             </div>
-            <div class="item" style="background-image: url('images/slide1.jpg');">
+            <div class="item" style="background-image: url('https://images.unsplash.com/photo-1443175679639-685643a7fd62?fit=crop&fm=jpg&h=975&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1925');">
               <div class="item-content">
                 <h1>Мы можем подготовить для путешествия всё</h1>
                 <p>25 лет искренней заботы о путешественниках — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
               </div>
             </div>
-            <div class="item" style="background-image: url('images/slide1.jpg');">
+            <div class="item" style="background-image: url('https://images.unsplash.com/photo-1445810694374-0a94739e4a03?fit=crop&fm=jpg&h=975&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1925');">
               <div class="item-content">
                 <h1>25 лет искренней заботы о путешественниках</h1>
                 <p>Мы можем подготовить для путешествия всё — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
               </div>
             </div>
-            <div class="item" style="background-image: url('images/slide1.jpg');">
+            <div class="item" style="background-image: url('https://images.unsplash.com/photo-1418272443502-f4af3b83661e?fit=crop&fm=jpg&h=975&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1925');">
               <div class="item-content">
                 <h1>Мы можем подготовить для путешествия всё</h1>
                 <p>25 лет искренней заботы о путешественниках — от билетов и виз до бронирования гостиниц и организации транспортировки в пункте путешествия. Единственное, что остается путешественнику, — это уложить вещи в чемодан</p>
@@ -187,7 +185,7 @@
         </div>
         
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-12 text-center">
             <a href="#" class="btn btn-outline">УЗНАТЬ ПОДРОБНОСТИ</a>
           </div>
         </div>
@@ -200,25 +198,25 @@
     <section class="ca-features">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-12 text-center">
             <h2>Преимущества</h2>
           </div>
         </div>
         <div class="row">
           <div class="col-md-4 col-md-offset-2 col-sm-6">
-            <p><img src="images/tick.svg">Бесплатный tax free адрес</p>
+            <p><img src="images/tick.svg" class="tick">Бесплатный tax free адрес</p>
           </div>
           <div class="col-md-4 col-sm-6">
-            <p><img src="images/tick.svg">Удобное отслеживание вашего заказа</p>
+            <p><img src="images/tick.svg" class="tick">Удобное отслеживание вашего заказа</p>
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-4 col-md-offset-2 col-sm-6">
-            <p><img src="images/tick.svg">Низкие цены на наши услуги</p>
+            <p><img src="images/tick.svg" class="tick">Низкие цены на наши услуги</p>
           </div>
           <div class="col-md-4 col-sm-6">
-            <p><img src="images/tick.svg">Кратчайшие сроки</p>
+            <p><img src="images/tick.svg" class="tick">Кратчайшие сроки</p>
           </div>
         </div>
 
@@ -235,7 +233,7 @@
     <section class="popular-shops">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-12 text-center">
             <h2>Популярные магазины</h2>
           </div>
         </div>
@@ -260,6 +258,30 @@
           <div class="col-md-4 col-sm-6 col-xs-12">
             <div class="ca-brand">
               <a href="#">
+                <img src="images/brand6.jpg">
+                <span class="ca-brand-web">gap.ch</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="ca-brand">
+              <a href="#">
+                <img src="images/brand5.jpg">
+                <span class="ca-brand-web">gopro.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="ca-brand">
+              <a href="#">
+                <img src="images/brand4.jpg">
+                <span class="ca-brand-web">adidas.com</span>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <div class="ca-brand">
+              <a href="#">
                 <img src="images/brand3.jpg">
                 <span class="ca-brand-web">victoriassecret.com</span>
               </a>
@@ -268,7 +290,7 @@
         </div>
 
         <div class="row">
-          <div class="col-xs-12">
+          <div class="col-xs-12 text-center">
             <a href="#" class="btn btn-outline">СМОТРЕТЬ ВСЕ</a>
           </div>
         </div>
@@ -279,13 +301,13 @@
     <!-- Begin of ca-map -->
     <section class="ca-map">
       <div id="ca-map"></div>
-      <div class="container">
-        <div class="ca-contacts-block">
-          <img src="images/logo-white.svg">
-          <p>Республика Казахстан, <br> г. Алматы ул. Егизбаева 52</p>
-          <p>Tel.: +7 (727) 248 68 03 <br>Сот.: +7 707 300 05 30</p>
-        </div>
+      
+      <div class="ca-contacts-block">
+        <img src="images/logo-white.svg">
+        <p>Республика Казахстан, <br> г. Алматы ул. Егизбаева 52</p>
+        <p>Tel.: +7 (727) 248 68 03 <br>Сот.: +7 707 300 05 30</p>
       </div>
+     
     </section>
     <!-- End of ca-map -->
 
@@ -295,6 +317,14 @@
         
       </div>
     </footer>
+
+    <div class="ca-goup" id="ca-goup">
+      <svg version="1.1" x="0px" y="0px" viewBox="-779 108 60 60" xml:space="preserve">
+<path d="M-749,127.7l-18.8,18.8l1.8,1.8l17.1-17.1l17.1,17.1l1.8-1.8L-749,127.7z"/>
+<path d="M-749,168c-16.5,0-30-13.5-30-30s13.5-30,30-30c16.5,0,30,13.5,30,30S-732.5,168-749,168z M-749,109.9
+  c-15.5,0-28.1,12.6-28.1,28s12.6,28,28.1,28c15.5,0,28.1-12.6,28.1-28S-733.5,109.9-749,109.9z"/>
+</svg>
+    </div>
     
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
@@ -309,7 +339,6 @@
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/owl-carousel/owl-carousel/owl.carousel.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
     
@@ -326,10 +355,14 @@
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
     <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+    <script src="/bower_components/owl-carousel/owl-carousel/owl.carousel.js"></script>
     <!-- endbuild -->
     
     <!-- build:js scripts/main.js -->
+    <script src="scripts/waypoints.min.js"></script>
+    <script src="scripts/plugins-scroll.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/map.js"></script>
     <!-- endbuild -->
   </body>
 </html>

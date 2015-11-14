@@ -1,3 +1,22 @@
+//Animate CSS + WayPoints javaScript Plugin
+//Example: $(".element").animated("zoomInUp");
+//Author URL: http://webdesign-master.ru
+(function($) {
+	$.fn.animated = function(inEffect) {
+		$(this).each(function() {
+			var ths = $(this);
+			ths.css("opacity", "0").addClass("animated").waypoint(function(dir) {
+				if (dir === "down") {
+					ths.addClass(inEffect).css("opacity", "1");
+				};
+			}, {
+				offset: "90%"
+			});
+
+		});
+	};
+})(jQuery);
+
 (function($){
 	$(document).ready(function() {
 
@@ -17,8 +36,7 @@
 		    singleItem:true,
 		    autoPlay : true,
     		stopOnHover : false,
-    		autoHeight : true,
-    		transitionStyle: "fade"
+    		autoHeight : true
 		 
 		    // "singleItem:true" is a shortcut for:
 		    // items : 1, 
@@ -31,20 +49,32 @@
 
 
 		// Go top!
-	    $('#goto-top').on('click', function () {
+	    $('#ca-goup').on('click', function () {
 	        $('html, body').animate({scrollTop: 0}, 'slow');
 	    });
 
 	    // Show fixed footer
 	    $(window).on("scroll", function () {
 	        if ($(window).scrollTop() > 200){
-	            $('#fixed-contacts').addClass('shown');
+	            $('#ca-goup').addClass('shown');
 	        }
 	        else if($(window).scrollTop() < 200) {
-	            $('#fixed-contacts').removeClass('shown');
+	            $('#ca-goup').removeClass('shown');
 	        }
 	    });
 
+
+	    //Chrome Smooth Scroll
+		try {
+			$.browserSelector();
+			if($("html").hasClass("chrome")) {
+				$.smoothScroll();
+			}
+		} catch(err) {
+
+		};
+
+		$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 	    
 
 	});
